@@ -1,81 +1,3 @@
-// chapter 38//
-//local vs gloabal variable//
-//example 1//
-
-//     var thesum
-//     addnumber();
-    
-// function addnumber() {
-//     thesum= 2+2 ;
-// //      alert(thesum);//
-// }
-//  alert(thesum); //
-
-
-// //example 2//
-// var theSum = 1000
-//  addnumber();
-
-//  function addnumber() {
-//     var theSum = 2 + 2;
-//  }
-                                                             
-//  alert(theSum);
-                                                    
-// CHAPTER 39//
- //SWITCH STATEMENT//
-
-// let $age  ="15-20"
-//  switch ($age) {
-//     case "0-1":
-//         alert("its a baby")
-//         break;
-//  // case 2//
-//      case "2-3":
-//         alert("toddler")
-//         break ;
-// //case3//
-//         case "4-6":
-//             alert("infant")
-//        break ;
-// //case4//
-//        case"7-12":
-//        alert("child")
-//        break ;
-// //defaultvalue//
-//     default: 
-//          alert("others")
-//  }
-
-//chapter 40//
-//how to complete them //chapter 39 &40 are same topic//
-
-//chapter41//
-//whileloop//
-  //example1//
-//  var num =10;
-//  var i =1;
-//  while (i<=num) {
-//    document.write(i);
-//   document.write("</br>");
-//    i++;
-    
-//  }
-//  document.write("</br>");
-//  alert("num");
-
-
-// //example2//
-// var i=0;
-//  while (i<=20) {
-//    document.write("</br>");
-//    document.write(i);
-//    i++
-//  }
-//  alert("i")
-//chapter42//
-//dowhileloop//
-
 //task//
 //question 1//
 function reversearray(arr) { 
@@ -220,6 +142,21 @@ console.log(findRoundNumber(599));
 console.log(findRoundNumber(590)); 
 console.log(findRoundNumber(600));
 
+//question10//
+function findIndex(arr, item) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === item) {
+      return i;
+    }
+  }
+  return -1; 
+}
+
+// Test the function
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+console.log(findIndex(fruits, "banana"));
+console.log(findIndex(fruits, "cherry")); // 
+console.log(findIndex(fruits, "fig")); // 
 
 
 
